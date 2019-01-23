@@ -34,6 +34,8 @@
 
  //peliculas sobre drogadicción
 
+ 
+
 const dataThemes =['tt0896986', 'tt0097240', 'tt0087913', 'tt0120788', 'tt0112461', 'tt0181865', 'tt0117951']
 
 const socialMovie = dataThemes.map( function(item) {
@@ -46,18 +48,21 @@ fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
    
 })
 
-// const dataThemes2 = ['tt0995829', 'tt0467406', ]
+const dataThemes2 = ['tt0995829', 'tt0467406', ]
 
-// const socialMovie2 = dataThemes.map( function(item) {
-//   fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
-//     .then(res => res.json())
-//      .then(data => {
+const socialMovie2 = dataThemes.map( function(item) {
+  fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
+    .then(res => res.json())
+     .then(data => {
   
-//            document.getElementById('root').innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
-//      })
+           document.getElementById('root').innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
+     })
      
-//   })
+  })
 
-// document.getElementById('drug').
+  document.getElementById('drug').addEventListener("click", () =>{
+    document.getElementById("cover_page").style.display = "none";
+    document.getElementById("root").style.display = "block";
+  })
 
    
