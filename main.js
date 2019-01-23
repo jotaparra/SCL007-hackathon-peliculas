@@ -34,35 +34,67 @@
 
  //peliculas sobre drogadicción
 
- 
+ document.getElementById("drug").addEventListener("click", () => {
+ socialMovie ()
+ document.getElementById("cover_page").style.display = "none";
+ document.getElementById("root2").style.display = "none";
+ document.getElementById("root").style.display = "block";
+})
+
 
 const dataThemes =['tt0896986', 'tt0097240', 'tt0087913', 'tt0120788', 'tt0112461', 'tt0181865', 'tt0117951']
 
-const socialMovie = dataThemes.map( function(item) {
+function socialMovie () {dataThemes.map( function(item) {
 fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
   .then(res => res.json())
    .then(data => {
 
-         document.getElementById('root').innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
+         document.getElementById("root").innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
    })
    
 })
+}
 
-const dataThemes2 = ['tt0995829', 'tt0467406', ]
+// aqui se muestran las peliculas sobre sexualidad
 
-const socialMovie2 = dataThemes.map( function(item) {
+  document.getElementById("sexuality").addEventListener("click", () =>{
+  socialMovie2();
+  document.getElementById("cover_page").style.display = "none";
+  document.getElementById("root2").style.display = "block";
+ })
+
+
+const dataThemes2 = ['tt0995829', 'tt0467406', 'tt1847731', 'tt1659337', 'tt0159097']
+
+function socialMovie2 () {dataThemes2.map( function(item) {
   fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
     .then(res => res.json())
      .then(data => {
   
-           document.getElementById('root').innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
+           document.getElementById("root2").innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
      })
-     
   })
+}
 
-  document.getElementById('drug').addEventListener("click", () =>{
-    document.getElementById("cover_page").style.display = "none";
-    document.getElementById("root").style.display = "block";
+
+document.getElementById("bullying").addEventListener("click", () =>{
+  socialMovie3
+  document.getElementById("cover_page").style.display = "none";
+  document.getElementById("root3").style.display = "block";
+ })
+
+const dataThemes3 = []
+
+function socialMovie3 () {dataThemes.map( function(item) {
+  fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
+    .then(res => res.json())
+     .then(data => {
+  
+           document.getElementById("root3").innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
+     })
   })
+}
 
+
+  
    
