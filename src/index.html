@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cine en el Aula</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>  
+
+    <!-- header -->
+
+    <header class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <img class="pt-2 offset-1" src="img/logo.png" alt="logo" width="100px" id= "logo" >
+              <!-- <button type="button" id="button_information"></button> -->
+            </div>
+            <div class="col-8">
+                <p class="title-header align-left">Cine en el aula</p>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <!-- index -->
+        <div id="cover_page">
+            <div class="col-12">
+                <br> <br> <br> <b> <p class="text">El apoyo audiovisual ha tomado relevancia en los establecimientos educacionales, permitiendo a los profesores entregar un aprendizaje adicional de manera didáctica, esta aplicación permite ver un listado de películas de acuerdo a temáticas sociales.
+            </p></b>
+            </div>
+            <div class="row justify-content-around pt-4">
+                <div class="div-clic col-4 card" id="drug" style="width: 18rem;">
+                    <img src="img/droga-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text align-center">Adicción</h4>
+                    </div>
+                </div>
+                <div class="div-clic col-4 card" id="bullying" style="width: 18rem;">
+                    <img src="img/bullyng.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text align-center">Bullying</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around mt-5">
+                <div class="div-clic col-4 card" id="migration" style="width: 18rem;">
+                    <img src="img/migration.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text align-center">Migración</h4>
+                    </div>
+                </div>
+                <div class="div-clic col-4 card" id="sexuality" style="width: 18rem;">
+                    <img src="img/sexualidad-adolescencia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text align-center">Sexualidad</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- topico drogadiccion -->
+        <section id="drogadiccion" class="row my-4">
+            <div class="col-12">
+
+                <h4 class="pb-2"> Adicciones</h4>
+                   
+                <hr>
+
+                <div id="root">
+                    <!-- A acá se imprimen las imágenes -->
+                </div>
+            </div>
+            
+        </section>
+
+        
+
+
+        <div id="root2"></div>
+        <!--muestra listado de pelicuas de sexualidad-->
+        <div id="root3"> </div>
+        <!--muestra listado de peliculas de bullying-->
+        <div id="root4"></div>
+        <!--muestra listado de l¡peliculas sobre migracion-->
+
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p>Cine en el aula ® 2019 </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
