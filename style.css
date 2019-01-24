@@ -1,12 +1,19 @@
+<<<<<<< HEAD
 header {
     background-color: #333;
     height: 100px;
 }
 
+=======
+>>>>>>> upstream/master
 #root{
     display: none;
 }; 
 
-/* #root_one{
+#root2{
     display: none;
-};  */
+}; 
+
+#root3{
+    display: none;
+}
