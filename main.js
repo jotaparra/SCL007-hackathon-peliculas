@@ -252,7 +252,6 @@ const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222
         }
 
         document.getElementById("logo").addEventListener("click", () =>{
-            socialMovie3()
             document.getElementById("cover_page").style.display = "block";
             document.getElementById("drogadiccion").style.display="none";
             document.getElementById("root2").style.display="none";
