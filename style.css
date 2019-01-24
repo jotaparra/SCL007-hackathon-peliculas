@@ -43,6 +43,7 @@ footer {
     display: none;
 }
 
+
 .align-left {
     text-align: left;
 }
@@ -87,3 +88,19 @@ h4 {
     color: #ffffff;
     font-size: 3.5em;
 }
+
+.text{
+    font-family: Sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.tittle{
+    text-align: center;
+}
+
+#information{
+    align-content: ;
+}
+

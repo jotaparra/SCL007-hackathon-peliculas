@@ -1,5 +1,8 @@
 
 
+
+
+
  //peliculas sobre adiccion
 
  document.getElementById("drug").addEventListener("click", () => {
@@ -14,10 +17,9 @@ const dataThemes =['tt0896986', 'tt0097240', 'tt0120788', 'tt0112461', 'tt018186
 
 
     function socialMovie () {dataThemes.map( function(item) {
-    fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
+    fetch('https://www.omdbapi.com/?i='+ item + '&apikey=6e2550ac')
       .then(res => res.json())
       .then(data => {
-
 
         document.getElementById('root').innerHTML += 
         ` <div class="card text-center">
@@ -125,9 +127,7 @@ function socialMovie2 () {dataThemes2.map( function(item) {
      
   })
 
-}
-
-                          
+}                 
 //aqui se muestra las peliculas sobre bullying
 
 document.getElementById("bullying").addEventListener("click", () =>{
@@ -198,7 +198,9 @@ document.getElementById("migration").addEventListener("click", () =>{
  })
 
 
-const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222918', 'tt3147312', 'tt1127715', 'tt0362227', 'tt0796307', 'tt0286499', 'tt3399024', 'tt2510028', 'tt4082068', 'tt0212826', 'tt0488798', 'tt1630027', 'tt0221799', 'tt0193167', 'The Immigrant']
+
+const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222918', 'tt3147312', 'tt1127715', 'tt0362227', 'tt0796307', 'tt0286499', 'tt3399024', 'tt2510028', 'tt4082068', 'tt0212826', 'tt0488798', 'tt1630027', 'tt0221799', 'tt0193167', 'tt1951181']
+
 
         function socialMovie4 () {dataThemes4.map( function(item) {
           fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
@@ -248,4 +250,15 @@ const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222
           })
 
         }
-    
+
+        document.getElementById("logo").addEventListener("click", () =>{
+            socialMovie3()
+            document.getElementById("cover_page").style.display = "block";
+            document.getElementById("drogadiccion").style.display="none";
+            document.getElementById("root2").style.display="none";
+            document.getElementById("root3").style.display="none";
+            document.getElementById("root4").style.display="none";
+
+
+
+           })
