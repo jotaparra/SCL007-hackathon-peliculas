@@ -1,28 +1,63 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Peliculas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<div id= "cover_page" >
-    <p>Se ha clasificado algunas las peliculas de acuerdo a diversas tematicas sociales, has click en una imagenes para conocerlas
-        </p>
-    
-        <input type="button" value="Drogadicción" id="drug" >
-</div>
-    
 
-     <div id= "root"></div> <!--muestra imagenes de peliculas drogadiccion -->
-    <div id= "root_one"></div>
+    <!-- header -->
+    <header class="row py-2 pl-5">
+        <div class="container-fluid">
+            <div class="col-12">
+                    <img src="img/logo_cine_en_el_aula.png" alt="logo" width="200">
+            </div>
+        </div>
+    </header>
 
-    
+    <!-- menú de navegación -->
 
-    <script src="data.js" ></script>
+    <div class="container">
+        <!-- index -->
+        <div id="cover_page">
+            <p>Se ha clasificado algunas las peliculas de acuerdo a diversas tematicas sociales, has click en una
+                imagenes
+                para conocerlas
+            </p>
+
+            <input type="button" value="Drogadicción" id="drug">
+        </div>
+
+        <section id="drogradiccion" class="row my-4">
+            <div class="col-12">
+                <div id="root" class="card-deck">
+                    <!-- A acá se imprimen las imágenes -->
+                </div>
+            </div>
+            <div id="root_one"></div>
+        </section>
+
+
+
+
+
+    </div>
+
+    <script src="data.js"></script>
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

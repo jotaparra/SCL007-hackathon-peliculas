@@ -36,19 +36,30 @@
 
  
 
-const dataThemes =['tt0896986', 'tt0097240', 'tt0087913', 'tt0120788', 'tt0112461', 'tt0181865', 'tt0117951']
+const dataThemes =['tt0097240', 'tt0087913', 'tt0120788', 'tt0112461', 'tt0181865', 'tt0117951', 'tt0896986']
 
-const socialMovie = dataThemes.map( function(item) {
+function socialMovie () {dataThemes.map( function(item) {
 fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
   .then(res => res.json())
    .then(data => {
 
          document.getElementById('root').innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
+       /*   `
+        <div class="col-3 card">
+          <img src="${data.Poster}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${data.Title}</h5>
+            <p class="card-text">Año: ${data.Year}</p>
+            <p class='card-text">Tipo:${data.Type}</p>
+          </div>
+        </div>
+        
+      ` */
    })
    
 })
-
-const dataThemes2 = ['tt0995829', 'tt0467406', ]
+}
+/* const dataThemes2 = ['tt0995829', 'tt0467406', ]
 
 const socialMovie2 = dataThemes.map( function(item) {
   fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
@@ -58,9 +69,10 @@ const socialMovie2 = dataThemes.map( function(item) {
            document.getElementById('root').innerHTML += `<img src=${data.Poster}>  ${data.Title} ${data.Year} ${data.Type}`
      })
      
-  })
+  }) */
 
   document.getElementById('drug').addEventListener("click", () =>{
+    socialMovie ()
     document.getElementById("cover_page").style.display = "none";
     document.getElementById("root").style.display = "block";
   })

@@ -1,4 +1,9 @@
- #root{
+header {
+    background-color: #333;
+    height: 100px;
+}
+
+#root{
     display: none;
 }; 
 
