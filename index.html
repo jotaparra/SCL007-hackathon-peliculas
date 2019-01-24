@@ -17,37 +17,65 @@
 
 
     <!-- header -->
-    <header class="row py-2 pl-5">
-        <div class="container-fluid">
-            <div class="col-12">
-                <img src="img/logo_cine_en_el_aula.png" alt="logo" width="200">
+    <header class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <img class="pt-2 offset-1" src="img/logo.png" alt="logo" width="100px">
+            </div>
+            <div class="col-8">
+                <p class="title-header align-left">Cine en el aula</p>
             </div>
         </div>
     </header>
 
-     <!-- menú de navegación -->
+    <!-- aquí empieza -->
 
-     <div class="container">
+    <!--  aqui termina -->
+
+
+    <div class="container">
         <!-- index -->
         <div id="cover_page">
-            <p>Se ha clasificado algunas las peliculas de acuerdo a diversas tematicas sociales, has click en una
-                imagenes
-                para conocerlas
-            </p>
-
-            <input type="button" value="Drogadicción" id="drug">
-            <input type="button" value="Sexualidad" id="sexuality">
-            <input type="button" value="Bullying" id="bullying">
-            <input type="button" value="Migración" id="migration" >
-
-
+            <div class="col-12">
+                <p>Se ha clasificado algunas las peliculas de acuerdo a diversas tematicas sociales, has click en una
+                    imagenes para conocerlas
+                </p>
+            </div>
+            <div class="row justify-content-around pt-4">
+                <div class="div-clic col-4 card" id="drug" style="width: 18rem;">
+                    <img src="img/droga-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text align-center">Adicción</h4>
+                    </div>
+                </div>
+                <div class="div-clic col-4 card" id="bullying" style="width: 18rem;">
+                    <img src="img/bullyng.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text align-center">Bullying</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around mt-5">
+                <div class="div-clic col-4 card" id="migration" style="width: 18rem;">
+                    <img src="img/migration.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text align-center">Migración</h4>
+                    </div>
+                </div>
+                <div class="div-clic col-4 card" id="sexuality" style="width: 18rem;">
+                    <img src="img/sexualidad-adolescencia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text align-center">Sexualidad</h4>
+                    </div>
+                </div>
+            </div>
         </div>
 
-       <!-- topico drogadiccion -->
-       <section id="drogadiccion" class="row my-4">
+
+        <!-- topico drogadiccion -->
+        <section id="drogadiccion" class="row my-4">
             <div class="col-12">
-                <h4> Drogadicción</h4>
-                <hr>
+                <h4 class="pb-2"> Drogadicción</h4>
                 <div id="root">
                     <!-- A acá se imprimen las imágenes -->
                 </div>
@@ -56,13 +84,22 @@
         </section>
 
 
-    </div>
+        <div id="root2"></div>
+        <!--muestra listado de pelicuas de sexualidad-->
+        <div id="root3"> </div>
+        <!--muestra listado de peliculas de bullying-->
+        <div id="root4"></div>
+        <!--muestra listado de l¡peliculas sobre migracion-->
 
-     <div id="root2"></div> <!--muestra listado de pelicuas de sexualidad-->
-     <div id= "root3"> </div> <!--muestra listado de peliculas de bullying-->
-     <div id="root4" ></div>  <!--muestra listado de l¡peliculas sobre migracion-->
-     
     </div>
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p>Cine en el aula ® 2019 </p>
+            </div>
+        </div>
+    </footer>
 
     <script src="data.js"></script>
     <script src="main.js"></script>

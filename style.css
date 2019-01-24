@@ -1,17 +1,36 @@
+body {
+    background-color: #fafaf2;
+}
+
 header {
-    background-color: #333;
+    background-color: #285867;
     height: 100px;
 }
 
-#drogadiccion{
-    display: none;
-}; 
+footer {
+    background-color: #3d3d3d;
+    height: 80px;
+    color: #FFFFFF;
+    
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+}
 
-#root2{
+#drogadiccion {
     display: none;
-}; 
+}
 
-#root3{
+;
+
+#root2 {
+    display: none;
+}
+
+;
+
+#root3 {
     display: none;
 }
 
@@ -20,8 +39,51 @@ header {
     font-weight: 500;
 }
 
-#root4{
+#root4 {
     display: none;
 }
 
+.align-left {
+    text-align: left;
+}
 
+.align-center {
+    text-align: center;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.div-clic {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.div-clic:hover {
+    background-color: #28586767;
+}
+
+.btn {
+    background-color: #1f7a99;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #25b8e8;
+    color: #ffffff;
+}
+
+.title-movie {
+    color: #285867;
+}
+
+h4 {
+    color: #262626
+}
+
+.title-header {
+    color: #ffffff;
+    font-size: 3.5em;
+}
