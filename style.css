@@ -1,4 +1,9 @@
-#root{
+header {
+    background-color: #333;
+    height: 100px;
+}
+
+#drogadiccion{
     display: none;
 }; 
 
@@ -9,7 +14,14 @@
 #root3{
     display: none;
 }
+
+
+.bold {
+    font-weight: 500;
+}
+
 #root4{
     display: none;
 }
+
 
