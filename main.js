@@ -1,5 +1,19 @@
 
 
+// window.onload= inicio
+
+// function order () {dataThemes.map(function(item) {
+//     fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
+//       .then(res => res.json())
+//       .then(data => {
+//         information = data
+        
+    
+//        })
+//     })    
+// }
+
+
  //peliculas sobre adiccion
 
  document.getElementById("drug").addEventListener("click", () => {
@@ -14,9 +28,35 @@ const dataThemes =['tt0896986', 'tt0097240', 'tt0120788', 'tt0112461', 'tt018186
 
 
     function socialMovie () {dataThemes.map( function(item) {
-    fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
+    fetch('https://www.omdbapi.com/?i='+ item + '&apikey=6e2550ac')
       .then(res => res.json())
       .then(data => {
+
+    // let order = data
+
+    // function ordenar (order, sortBy, sortOrder) {
+    //     for (let i = 0; i<order.length; i++){
+    //     if (sortBy === "titulo" && sortOrder === "a-z"){
+    //     data.sort((a,b) =>{
+    //         if (a.Title < b.Title) {
+    //           return -1;
+    //         }
+    //         if (a.Title > b.Title) {
+    //           return 1;
+    //         }
+    //         //a debe ser igual b
+    //         return 0;
+            
+    //       } )
+    //      return order;
+    
+    //     } 
+        
+
+
+    // }
+
+
 
 
         document.getElementById('root').innerHTML += 
@@ -27,7 +67,7 @@ const dataThemes =['tt0896986', 'tt0097240', 'tt0120788', 'tt0112461', 'tt018186
                          <a class="nav-link active" href="#">Ficha</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Ver comentarios</a>
+                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Ver comentarios</a>
                      </li>
                  </ul>
              </div>
@@ -44,6 +84,7 @@ const dataThemes =['tt0896986', 'tt0097240', 'tt0120788', 'tt0112461', 'tt018186
                              <p><span class="bold">Año:</span> ${data.Year}</p>
                              <p><span class="bold">Género:</span> ${data.Genre}</p>
                              <p><span class="bold">Duración:</span> ${data.Runtime}</p>
+                             <p><span class="bold">Valoración:</span>${data.imdbRating}</p>
                              <p><span class="bold">Sinopsis:</span>${data.Plot}</p>
                              <div class="row">
                              <div class="col-4">
@@ -53,10 +94,10 @@ const dataThemes =['tt0896986', 'tt0097240', 'tt0120788', 'tt0112461', 'tt018186
                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu opinión para que el resto de los usuarios la pueda leer."></textarea>
                                  <button class="btn btn-warning mt-3">Agregar</button>
                              </div>
-                             <p><span class="bold">Tags: <span class="badge badge-primary">Drogadicción</span> </span>
+                             <p><span class="bold">Etiqueta: <span class="badge badge-primary">Drogadicción</span> </span>
                              
                          </div> `  
-      
+
    })
    
 })
@@ -84,9 +125,7 @@ function socialMovie2 () {dataThemes2.map( function(item) {
      
   })
 
-}
-
-                          
+}                 
 //aqui se muestra las peliculas sobre bullying
 
 document.getElementById("bullying").addEventListener("click", () =>{
@@ -119,7 +158,7 @@ document.getElementById("migration").addEventListener("click", () =>{
  })
 
 
-const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222918', 'tt3147312', 'tt1127715', 'tt0362227', 'tt0796307', 'tt0211815', 'tt0286499', 'tt3399024', 'tt2510028', 'tt4082068', 'tt0212826', 'tt0488798', 'tt1630027', 'tt0221799', 'tt0193167', 'The Immigrant']
+const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222918', 'tt3147312', 'tt1127715', 'tt0362227', 'tt0796307', 'tt0286499', 'tt3399024', 'tt2510028', 'tt4082068', 'tt0212826', 'tt0488798', 'tt1630027', 'tt0221799', 'tt0193167', 'tt1951181']
 
         function socialMovie4 () {dataThemes4.map( function(item) {
           fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
@@ -131,4 +170,15 @@ const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222
           })
 
         }
-    
+
+        document.getElementById("logo").addEventListener("click", () =>{
+            socialMovie3()
+            document.getElementById("cover_page").style.display = "block";
+            document.getElementById("drogadiccion").style.display="none";
+            document.getElementById("root2").style.display="none";
+            document.getElementById("root3").style.display="none";
+            document.getElementById("root4").style.display="none";
+
+
+
+           })

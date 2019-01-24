@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Peliculas</title>
+    <title>Cine en el Aula</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +13,16 @@
 
 </head>
 
-<body>
-
+<body>  
 
     <!-- header -->
-    <header class="row py-2 pl-5">
+    <header class="row py-2 pl-5"> 
         <div class="container-fluid">
             <div class="col-12">
-                <img src="img/logo_cine_en_el_aula.png" alt="logo" width="200">
+                <img src="img/logo_cine_en_el_aula.png" alt="logo" width="200" id="logo">
+                <!-- <button type="button" id="button_information"></button> -->
+                <div class="col-8">
+                   </div>
             </div>
         </div>
     </header>
@@ -30,10 +32,8 @@
      <div class="container">
         <!-- index -->
         <div id="cover_page">
-            <p>Se ha clasificado algunas las peliculas de acuerdo a diversas tematicas sociales, has click en una
-                imagenes
-                para conocerlas
-            </p>
+            <br> <br> <br> <b> <p class="text">El apoyo audiovisual ha tomado relevancia en los establecimientos educacionales, permitiendo a los profesores entregar un aprendizaje adicional de manera didáctica, esta aplicación permite ver un listado de películas de acuerdo a temáticas sociales.
+            </p></b>
 
             <input type="button" value="Drogadicción" id="drug">
             <input type="button" value="Sexualidad" id="sexuality">
@@ -46,7 +46,12 @@
        <!-- topico drogadiccion -->
        <section id="drogadiccion" class="row my-4">
             <div class="col-12">
-                <h4> Drogadicción</h4>
+                <h4> Adicción</h4> 
+                    <!-- <select>
+                    <option value="orderAZ">Ordenar Peliculas AZ</option>
+                    <option value="orderZA">Ordenar Peliculas ZA</option>
+                    <option value="rating">Ordenar por Valorización</option>
+                  </select> -->
                 <hr>
                 <div id="root">
                     <!-- A acá se imprimen las imágenes -->

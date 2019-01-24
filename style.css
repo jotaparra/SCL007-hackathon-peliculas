@@ -24,4 +24,17 @@ header {
     display: none;
 }
 
+.text{
+    font-family: Sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
 
+.tittle{
+    text-align: center;
+}
+
+#information{
+    align-content: ;
+}
