@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 header {
     background-color: #333;
     height: 100px;
 }
 
-=======
->>>>>>> upstream/master
-#root{
+#drogadiccion{
     display: none;
 }; 
 
@@ -16,4 +13,8 @@ header {
 
 #root3{
     display: none;
+}
+
+.bold {
+    font-weight: 500;
 }
