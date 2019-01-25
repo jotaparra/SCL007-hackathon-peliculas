@@ -19,13 +19,13 @@ Se realizó una encuestas a 13 profesores para tener la persepción de ellos fre
 # Historias de Usuarios:
 
 
-## Historia de Usuario 1
+## Historia de Usuario Nº 1
 
-Como: usuario de la aplicación.
+Como: Usuario de la aplicación.
 
-Quiero: una sección que me muestre películas que aborden el tema del bullying.
+Quiero: Una sección que me muestre películas que aborden el tema del bullying.
 
-Para: desarrollar un debate con los estudiantes.
+Para: Desarrollar un debate con los estudiantes.
 
 Dada: La opcion que aparece en la pagina web.
 
@@ -35,13 +35,13 @@ Entonces: Se muestra el listado de las peliculas que aborda el tema, cada una co
 
 
 
-# Historia de Usuario 2
+## Historia de Usuario Nº 2
 
-Como: usuario de la aplicación.
+Como: Usuario de la aplicación.
 
-Quiero: una sección que muestre películas sobre la migración
+Quiero: Una sección que muestre películas sobre la migración
 
-Para: generar una instancia de conversación sobre la diversidad cultural entre los estudiantes.
+Para: Generar una instancia de conversación sobre la diversidad cultural entre los estudiantes.
 
 Dada: La opcion que aparece en la pagina web.
 
@@ -50,13 +50,13 @@ Cuando: El usuario hace click en la imagen sobre migración.
 Entonces: Se muestra el listado de las peliculas que aborda el tema, cada una con su información en detalle (sinopsis, año de estreno, género, duración)
 
 
-#Historia de Usuario 
+## Historia de Usuario Nº 3
 
-Como: usuario de la aplicación.
+Como: Usuario de la aplicación.
 
-Quiero: una sección que muestre un listado de películas que abordel el tema sobre sexualidad.
+Quiero: Una sección que muestre un listado de películas que abordel el tema sobre sexualidad.
 
-Para: promover la educación sexual en los estudiantes.
+Para: Promover la educación sexual en los estudiantes.
 
 Dada: La opcion que aparece en la pagina web.
 
@@ -65,13 +65,13 @@ Cuando: El usuario hace click en la imagen sobre sexualidad.
 Entonces: Se muestra el listado de las peliculas que aborda el tema, cada una con su información en detalle (sinopsis, año de estreno, género, duración)
 
 
-# Historia de Usuario 
+## Historia de Usuario Nº 4
 
-Como: usuario de la aplicación.
+Como: Usuario de la aplicación.
 
-Quiero: una sección que aborde el tema sobre las adicciones.
+Quiero: Una sección que aborde el tema sobre las adicciones.
 
-Para: que los estudiantes tengan conocimientos de las consecuencias de éstas.
+Para: Que los estudiantes tengan conocimientos de las consecuencias de éstas.
 
 Dada: La opcion que aparece en la pagina web.
 
