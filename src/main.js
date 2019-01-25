@@ -16,7 +16,7 @@ document.getElementById("drug").addEventListener("click", () => {
    
    
        function socialMovie () {dataThemes.map( function(item) {
-       fetch('https://www.omdbapi.com/?i='+ item + '&apikey=6e2550ac')
+       fetch('https://cors-anywhere.herokuapp.com/https://www.omdbapi.com/?i='+ item + '&apikey=6e2550ac')
          .then(res => res.json())
          .then(data => {
    
@@ -82,7 +82,7 @@ document.getElementById("drug").addEventListener("click", () => {
    
    
    function socialMovie2 () {dataThemes2.map( function(item) {
-     fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
+     fetch('https://cors-anywhere.herokuapp.com/https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
        .then(res => res.json())
         .then(data => {
      
@@ -146,7 +146,7 @@ document.getElementById("drug").addEventListener("click", () => {
    
    
          function socialMovie3 () {dataThemes3.map( function(item) {
-           fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
+           fetch('https://cors-anywhere.herokuapp.com/https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
              .then(res => res.json())
              .then(data => {
            
@@ -211,7 +211,7 @@ document.getElementById("drug").addEventListener("click", () => {
    
    
            function socialMovie4 () {dataThemes4.map( function(item) {
-             fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
+             fetch('https://cors-anywhere.herokuapp.com/https://www.omdbapi.com/?i='+ item  + '&apikey=6e2550ac')
                .then(res => res.json())
                .then(data => {
              
