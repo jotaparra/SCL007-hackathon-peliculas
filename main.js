@@ -8,7 +8,8 @@
  document.getElementById("drug").addEventListener("click", () => {
  socialMovie ()
  document.getElementById("cover_page").style.display = "none";
- document.getElementById("root2").style.display = "none";
+ document.getElementById("sexualidad").style.display = "none";
+ document.getElementById("bully").style.display = "none";
  document.getElementById("drogadiccion").style.display = "block";
 })
 
@@ -44,7 +45,7 @@ const dataThemes =['tt0896986', 'tt0097240', 'tt0120788', 'tt0112461', 'tt018186
                         <p><span class="bold">Género:</span> ${data.Genre}</p>
                         <p><span class="bold">Duración:</span> ${data.Runtime}</p>
                         <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                        <p><span class="bold">Etiquetas: <span class="badge badge-danger">Drogadicción</span> </span>
+                        <p><span class="bold">Etiquetas: <span class="badge badge-danger">Adicciones</span> </span>
                             <div class="row">
                                 <div class="col-12">
                                     <p class="bold pt-2">Ingresa un comentario:</p>
@@ -72,7 +73,10 @@ const dataThemes =['tt0896986', 'tt0097240', 'tt0120788', 'tt0112461', 'tt018186
   document.getElementById("sexuality").addEventListener("click", () =>{
   socialMovie2();
   document.getElementById("cover_page").style.display = "none";
-  document.getElementById("root2").style.display = "block";
+  document.getElementById("bully").style.display = "none";
+  document.getElementById("drogadiccion").style.display = "none";
+  document.getElementById("migracion").style.display = "none";
+  document.getElementById("sexualidad").style.display = "block";
  })
 
 
@@ -107,7 +111,7 @@ function socialMovie2 () {dataThemes2.map( function(item) {
                         <p><span class="bold">Género:</span> ${data.Genre}</p>
                         <p><span class="bold">Duración:</span> ${data.Runtime}</p>
                         <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                        <p><span class="bold">Etiquetas: <span class="badge badge-danger">Drogadicción</span> </span>
+                        <p><span class="bold">Etiquetas: <span class="badge badge-danger">Sexualidad</span> </span>
                             <div class="row">
                                 <div class="col-12">
                                     <p class="bold pt-2">Ingresa un comentario:</p>
@@ -133,8 +137,12 @@ function socialMovie2 () {dataThemes2.map( function(item) {
 document.getElementById("bullying").addEventListener("click", () =>{
   socialMovie3()
   document.getElementById("cover_page").style.display = "none";
-  document.getElementById("root3").style.display = "block";
+  document.getElementById("bully").style.display = "block";
+  document.getElementById("drogadiccion").style.display = "none";
+  document.getElementById("migracion").style.display = "none";
+  document.getElementById("sexualidad").style.display = "none";
  })
+
 
 const dataThemes3 = ['tt0114906', 'tt2543472', 'tt0929632', 'tt0429589', 'tt1288635', 'tt5323662', 'tt0377092', 'tt1666801', 'tt0398808', 'tt1282140', 'tt0363589', 'tt2368749', 'tt0087538', 'tt1930315', 'tt1670474', 'tt2523832', 'tt0953318', 'tt1340418', 'tt0377091', 'tt0242193', 'tt1959347', 'tt1330205', 'tt0081207']
 
@@ -167,7 +175,7 @@ const dataThemes3 = ['tt0114906', 'tt2543472', 'tt0929632', 'tt0429589', 'tt1288
                             <p><span class="bold">Género:</span> ${data.Genre}</p>
                             <p><span class="bold">Duración:</span> ${data.Runtime}</p>
                             <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                            <p><span class="bold">Etiquetas: <span class="badge badge-danger">Drogadicción</span> </span>
+                            <p><span class="bold">Etiquetas: <span class="badge badge-danger">Bullying</span> </span>
                                 <div class="row">
                                     <div class="col-12">
                                         <p class="bold pt-2">Ingresa un comentario:</p>
@@ -194,9 +202,11 @@ const dataThemes3 = ['tt0114906', 'tt2543472', 'tt0929632', 'tt0429589', 'tt1288
 document.getElementById("migration").addEventListener("click", () =>{
   socialMovie4()
   document.getElementById("cover_page").style.display = "none";
-  document.getElementById("root4").style.display = "block";
+  document.getElementById("migracion").style.display = "block";
+  document.getElementById("bully").style.display = "none";
+  document.getElementById("drogadiccion").style.display = "none";
+  document.getElementById("sexualidad").style.display = "none";
  })
-
 
 
 const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222918', 'tt3147312', 'tt1127715', 'tt0362227', 'tt0796307', 'tt0286499', 'tt3399024', 'tt2510028', 'tt4082068', 'tt0212826', 'tt0488798', 'tt1630027', 'tt0221799', 'tt0193167', 'tt1951181']
@@ -207,7 +217,7 @@ const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222
             .then(res => res.json())
             .then(data => {
           
-                document.getElementById('root3').innerHTML += 
+                document.getElementById('root4').innerHTML += 
                 ` <div class="card text-center">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
@@ -230,7 +240,7 @@ const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222
                                 <p><span class="bold">Género:</span> ${data.Genre}</p>
                                 <p><span class="bold">Duración:</span> ${data.Runtime}</p>
                                 <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                <p><span class="bold">Etiquetas: <span class="badge badge-danger">Drogadicción</span> </span>
+                                <p><span class="bold">Etiquetas: <span class="badge badge-danger">Migración</span> </span>
                                     <div class="row">
                                         <div class="col-12">
                                             <p class="bold pt-2">Ingresa un comentario:</p>
@@ -248,15 +258,14 @@ const dataThemes4 = ['tt0414413', 'tt0857191', 'tt1508675', 'tt6776106', 'tt5222
             </div>`
             })
           })
-
         }
 
         document.getElementById("logo").addEventListener("click", () =>{
             document.getElementById("cover_page").style.display = "block";
             document.getElementById("drogadiccion").style.display="none";
-            document.getElementById("root2").style.display="none";
-            document.getElementById("root3").style.display="none";
-            document.getElementById("root4").style.display="none";
+            document.getElementById("bully").style.display="none";
+            document.getElementById("migracion").style.display="none";
+            document.getElementById("sexualidad").style.display="none";
 
 
 
