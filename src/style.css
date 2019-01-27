@@ -1,13 +1,11 @@
 body {
     background-color: #fafaf2;
-}
-
-header {
+  }
+  header {
     background-color: #285867;
     height: 100px;
-}
-
-footer {
+  }
+  footer {
     background-color: #3d3d3d;
     height: 80px;
     color: #FFFFFF;
@@ -16,93 +14,74 @@ footer {
     bottom: 0px;
     height: 30px;
     width: 100%;
-}
-
-#drogadiccion {
+  }
+  #drogadiccion {
     display: none;
-}
-#sexualidad {
+  }
+  #sexualidad {
     display: none;
-}
-
-#bully {
+  }
+  #bully {
     display: none;
-}
-#migracion {
+  }
+  #migracion {
     display: none;
-}
-
-.bold {
+  }
+  .bold {
     font-weight: 500;
-}
-
-
-
-.align-left {
+  }
+  .align-left {
     text-align: left;
-}
-
-.align-center {
+  }
+  .align-center {
     text-align: center;
-}
-
-p {
+  }
+  p {
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-.div-clic {
+  }
+  .div-clic {
     background-color: #FFFFFF;
     cursor: pointer;
-}
-
-.div-clic:hover {
+  }
+  .div-clic:hover {
     background-color: #28586767;
-}
-
-.btn {
+  }
+  .btn {
     background-color: #1f7a99;
     color: #ffffff;
-}
-
-.btn:hover {
+  }
+  .btn:hover {
     background-color: #25b8e8;
     color: #ffffff;
-}
-
-.title-movie {
+  }
+  .title-movie {
     color: #285867;
-}
-
-h4 {
+  }
+  h4 {
     color: #262626
-}
-
-.title-header {
+  }
+  .title-header {
     color: #ffffff;
     font-size: 3.5em;
-}
-
-.text{
+  }
+  .text{
     font-family: Sans-serif;
     font-size: 20px;
     text-align: center;
     color: #333;
-}
-
-.tittle{
+  }
+  .tittle{
     text-align: center;
-}
-
-/* ul {
+  }
+  /* ul {
     list-style: none;
-}
-ul li{
+  }
+  ul li{
     float: left;
     width: 192px;
-} */
-/* 
-#information{
+  } */
+  /* 
+  #information{
     align-content:
-} */
-
+  } */
